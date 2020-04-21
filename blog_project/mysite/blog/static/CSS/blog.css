@@ -1,0 +1,40 @@
+/* .loader{
+  color:linear-gradient(45deg,#0f8,#08f);
+} */
+
+.techfont {
+  font-family: 'Russo One',sans-serif;
+  font-size: 1.5em;
+  /* margin-bottom: 10px; */
+}
+
+.biggerbrand {
+  font-size: 1.3em;
+}
+
+.centerstage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postdate{
+  text-align: center;
+}
+
+.posttitle{
+  font-family: 'Russo One',sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.postcontent{
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+}
+
+.btn-comment{
+  position: absolute;
+  right: 0px;
+}
+
+/* COLOR CHANGER  */
