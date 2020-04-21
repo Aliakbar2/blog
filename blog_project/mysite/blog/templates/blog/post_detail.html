@@ -14,9 +14,9 @@
 
 {% if user.is_authenticated %}
   <a class="btn btn-primary" href="{% url 'post_edit' pk=post.pk %}">
-    <span class="glyphicon glyphicon-pencil"></span></a>
+    <i class="fas fa-edit"></i></a>
   <a class="btn btn-primary" href="{% url 'post_remove' pk=post.pk %}">
-    <span class="glyphicon glyphicon-remove"></span></a>
+    <i class="fas fa-trash-alt"></i></a>
 {% endif %}
 
 <br>
@@ -29,9 +29,9 @@
       {{ comment.created_date }}
       {% if not comment.approved_comment %}
       <a class="btn btn-default" href="{% url 'comment_approve' pk=comment.pk %}">
-        <span class="glyphicon glyphicon-ok"></span></a>
+        <i class="fas fa-check"></i></a>
       <a class="btn btn-default" href="{% url 'comment_remove' pk=comment.pk %}">
-        <span class="glyphicon glyphicon-remove"></span></a>
+        <i class="fas fa-trash-alt"></i></a>
       {% endif %}
 
       <p>{{ comment.text|safe|linebreaks }}</p>
