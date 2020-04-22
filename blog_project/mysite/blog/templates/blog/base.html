@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>BASE</title>
+    <title>Aliz blog</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand navbar-light bg-light techfont">
       <div class="container">
         <ul class="navbar-nav ">
-            <a class="navbar-brand biggerbrand" href="{% url 'post_list' %}">My blog</a>
+            <a class="navbar-brand biggerbrand" href="{% url 'post_list' %}">Aliz blog</a>
             <li><a class="nav-link" href="{% url 'about' %}">About</a></li>
             <li><a class="nav-link" href="https://www.github.com">Github</a></li>
             <li><a class="nav-link" href="https://www.linkedin.com">Linkedin</a></li>
@@ -39,7 +39,7 @@
           <li><a class="nav-link"> Welcome: {{user.username}}</a></li>
 
           {% else %}
-          <li><a class="nav-link navbar-right" href="{% url 'login' %}"><span class="glyphicon glyphicon-user" aria-hidden="true">LOGIN</span></a></li>
+          <li><a class="nav-link navbar-right" href="{% url 'login' %}"><i class="far fa-user"></i></a></li>
           {% endif %}
         </ul>
       </div>

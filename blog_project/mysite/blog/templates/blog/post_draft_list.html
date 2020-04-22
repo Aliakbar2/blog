@@ -3,6 +3,7 @@
 
 {% for post in posts %}
   <div class="post">
+    <!-- <p class="date">Created on: {{ post.created_date}}</p> -->
     <p class="date">Created on: {{ post.created_date|date:"j M y" }}</p>
     <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
     <p>{{ post.text|truncatechars:50}}</p>
